@@ -1,6 +1,6 @@
 import { BasicResponse } from "./types";
 import { IHelloController } from "./interfaces";
-import { LogSuccess } from "@/utils/logger";
+import { LogSuccess } from "../utils/logger";
 //el @ es xq lo configuramos en el tsconfig
 
 //? creamos el controlador que implementa la interface IHelloController, por lo que debe tener su misma estructura interna con sus métodos
@@ -9,7 +9,7 @@ export class HelloController implements IHelloController {
     LogSuccess('[/api/hello] Get Request');
 
     return {
-      message: `Hello, ${name || "Anonimus!!"}`
+      message: `Hello, ${name || "Anonimus!! (controllers)"}`
     }
 
     //throw new Error("Method not implemented.");
