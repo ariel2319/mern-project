@@ -9,6 +9,6 @@ export type BasicResponse = {
  * ErrorResponse JSON response for CONTROLLERS
  */
 export type ErrorResponse = {
-  error: string
+  error: string,
   message: string
 }
